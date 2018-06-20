@@ -12,6 +12,7 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let str = "hey look i added some code I want to save"
         // Do any additional setup after loading the view, typically from a nib.
     }
 
