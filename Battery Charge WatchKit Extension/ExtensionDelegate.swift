@@ -9,11 +9,18 @@
 import WatchKit
 
 class ExtensionDelegate: NSObject, WKExtensionDelegate {
-
+    
+    var watchBatteryState: WKInterfaceDeviceBatteryState {
+        return WKInterfaceDevice.current().batteryState
+    }
+    var watchBatteryLevel: Float {
+        return WKInterfaceDevice.current().batteryLevel
+    }
+    
     func applicationDidFinishLaunching() {
         // Perform any final initialization of your application.
         
-        let watchLevel = WKInterfaceDevice.current().batteryLevel
+        
     }
 
     func applicationDidBecomeActive() {
